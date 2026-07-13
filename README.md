@@ -1,19 +1,32 @@
-# Project: Untitled Action-Adventure (working)
+# TheGame (working title)
 
-3D action-adventure built in **Godot 4** by David + Claude. Core hook: a hidden
-milestone system that silently tracks player behavior and rewards emergent
-playstyles with unexpected perks (inspired by Solo Leveling).
+3D action-adventure built in **Godot 4** by David + Claude. Core hook: a
+hidden milestone system that silently tracks player behavior and rewards
+emergent playstyles with unexpected perks (inspired by Solo Leveling).
 
-## How this repo works with Claude
+Repo: https://github.com/DavidHelfer1616/TheGame (public, single source
+of truth for design and, later, code).
 
-- These docs are the **single source of truth**. Chat sessions are working
-  sessions against them; Claude's cross-chat memory holds summaries only.
-- **Session start:** upload this folder/zip to Claude, or point Claude at the
-  GitHub repo (Claude can read raw GitHub content directly).
-- **Session end:** Claude returns updated files; David commits.
-- Every doc carries status labels: `[RATIFIED]` (David signed off),
-  `[PROPOSED]` (Claude suggestion awaiting sign-off), `[OPEN]` (undecided).
-- All phase advancement and ratification authority belongs to **David only**.
+## Orientation for any new Claude session
+
+Read in this order before doing anything:
+1. `docs/process/decision-log.md` — every ratified ruling + pending
+   proposals. This is project law.
+2. `docs/process/pipeline.md` — the phase process and current idea board.
+3. The relevant `docs/systems/` or `docs/world/` file for whatever is
+   being worked on.
+
+Non-negotiable rules:
+- **All ratification and phase advancement authority belongs to David.**
+  Claude proposes; David signs off. Never mark anything ratified or
+  advance a phase without his explicit approval.
+- Status labels everywhere: `[RATIFIED]` / `[PROPOSED]` / `[OPEN]`.
+- New ideas surfacing mid-discussion get pinned to Phase 0 in
+  `pipeline.md` immediately.
+- David prefers objective trade-off analysis over validation; skip the
+  praise, surface the costs.
+- Docs are updated in the same session as the decisions they record;
+  Claude handles commits/pushes desktop-side with David's approval.
 
 ## Layout
 
@@ -21,7 +34,5 @@ playstyles with unexpected perks (inspired by Solo Leveling).
     docs/world/     world & region content
     docs/systems/   mechanical system specs (one file per pipeline card)
 
-## Process quick reference
-
-Ideas travel individually through: **Phase 0 Establish → Phase 1 Refine →
-Phase 2 Validate → Greenlit** (feasibility failures return to Phase 0).
+The Godot project will live beside `docs/` in this repo when production
+begins.

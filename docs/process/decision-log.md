@@ -48,6 +48,15 @@ bottom until David signs off.
   system, and XP/reward transaction split from the milestone card into
   separate pipeline items.
 
+- **2026-07-12 — Repository**: https://github.com/DavidHelfer1616/TheGame
+  (public). Single source of truth for all design docs and future code.
+  Public visibility chosen so any Claude surface can read without auth.
+- **2026-07-12 — Working environment**: development moves to Claude
+  desktop (Cowork / Claude Code) working directly in David's local clone;
+  Claude performs git operations there with David's approval. The
+  chat-era manual download/push relay is retired. Design authority
+  rules are unchanged and surface-independent.
+
 ## Proposed (awaiting David)
 
 - Accumulator displays XP/loot only; hidden milestone counters ride the
